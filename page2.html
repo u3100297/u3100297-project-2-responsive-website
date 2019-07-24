@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Churchill House u3100297</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/resetCSS.css" />
+    <link rel="stylesheet" type="text/css" href="css/StylesStuff.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" /> -->
+
+
+    <link rel="stylesheet" href="page0.html" media="screen" type="text/css">
+    <link rel="stylesheet" href="page1.html" media="screen" type="text/css">
+    <link rel="stylesheet" href="page2.html" media="screen" type="text/css">
+    <link rel="stylesheet" href="page3.html" media="screen" type="text/css">
+    <link rel="stylesheet" href="page4.html" media="screen" type="text/css">
+
+
+</head>
+<!--________ headerLower ________-->
+<!--______________________________________ page body ______________________________________-->
+
+<body>
+    <div class="container">
+        <!--______________________________________ header content ______________________________________-->
+
+        <header>
+            <div class="headerUpper">
+                <!--________ headerUpper ________-->
+                <div class="headerTitleItem">
+                    <h1><b>Churchill House</b></h1>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!--________ headerLower ________-->
+            <div class="headerLower">
+                <!--________ desktop nav ________-->
+
+                <nav class="nav">
+                    <!-- <div class="logoWrapper">
+                            <a href="https://www.duckduckgo.com" target="_blank">
+                                <img src="img/logo/boyd-logo-small.png" class="logo" alt="trollin">
+                            </a>
+                        </div> -->
+                    <!--	  
+                        <Li><button class="button buttonInner"><a href="index.html">Home</a></button></Li>
+                        <Li><button class="button buttonInner"><a href="page0.html">Description</a></button></Li>
+                        <Li><button class="button buttonInner"><a href="page1.html">History</a></button></Li>
+                        <Li> <button class="button buttonInner"><a href="page2.html">Robin Boyd</a></button></Li>
+                           
+                        <Li><a href="index.html">Home</a></Li>
+                        <Li><a href="page0.html">Description</a></Li>
+                        <Li><a href="page1.html">History</a></Li>
+                        <Li><a href="page2.html">Robin Boyd</a></Li>
+                        -->
+                    <form>
+                        <button formaction="index.html" class="button buttonInner">
+                            Home
+                        </button>
+                    </form>
+                    <form>
+                        <button formaction="page0.html" class="button buttonInner">
+                            Description
+                        </button>
+                    </form>
+                    <form>
+                        <button formaction="page1.html" class="button buttonInner">
+                            History
+                        </button>
+                    </form>
+                    <form>
+                        <button formaction="page2.html" class="button buttonInner">
+                            Robin Boyd
+                        </button>
+                    </form>
+                </nav>
+
+                <!--________ tablet / mobile nav ________-->
+
+                <div class="hamburgler">
+                    <section class="hamburglerImg">
+                        <!-- enter hamburgler opens and closes the menu-->
+                        <button id="enterHamburgler" class onclick="openNav()">&#9776;</button>
+                        <h3 class="textTitleClassTitle">Menu</h3>
+                    </section>
+                    <script>
+                        // open 
+                        function openNav() {
+                            document.getElementById("hamNav").style.width = "20rem";
+                        }
+                        // close -- a little dodgy probably could change the animation type etc
+                        function closeNav() {
+                            document.getElementById("hamNav").style.width = "0";
+                        }
+
+                    </script>
+                    <div id="hamNav" class="midNav">
+                        <!-- ham menu, id is for JS, class is for css-->
+                        <ul>
+                            <!-- close button-->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <!-- menu links -->
+                            <li><a class="hamburglerStyle" href="index.html">Home</a></li>
+                            <li><a class="hamburglerStyle" href="page0.html">Description</a></li>
+                            <li><a class="hamburglerStyle" href="page1.html">History</a></li>
+                            <li><a class="hamburglerStyle" href="page2.html">Robin Boyd</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="headerActuallyLower">
+                <!--________ logo img ________-->
+                <div class="logoWrapper">
+                    <img src="img/logo/boyd-logo.png" class="logo" alt="robin boyd logo">
+                </div>
+            </div>
+        </header>
+        <!--______________________________________ main ______________________________________-->
+
+        <main>
+            <div class="content">
+                <!--______________________________________ gal box 0 ______________________________________-->
+
+                <section class="sideBySideGallery">
+                    <!--pics
+                    26. Robin Boyd (extra)
+                    27. Robin Boyd not dead (extra)
+                    -->
+                    <!--________ title ________-->
+
+
+                    <div class="galleryWrap">
+
+                        <!--________ split left ________-->
+                        <div class="galSplitLeft-sideBySide">
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryImgSideBySide" src="img/page2/box0/extra1-churchill%20house%20by%20robin%20boyd%20photo%20copyright%20darren%20bradley.jpg" alt="Robin Boyd (extra)">
+                                </div>
+                                <div class="galleryText">
+                                    Robin Boyd (extra)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--________ split right ________-->
+                        <div class="galSplitRight-sideBySide">
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryImgSideBySide" src="img/page2/box0/extra2-robin%20boyd%20portrait%20copyright%20Mark%20Strizic.jpg" alt="Robin Boyd (extra)">
+                                </div>
+                                <div class="galleryText">
+                                    Robin Boyd (extra)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </section>
+
+                <!--______________________________________ text box 0 ______________________________________-->
+
+                <section class="center80PercentText">
+                    <div class="center80Percent">
+                        <div class="bigTextBoxCentered">
+                            <div class="boxTitle">
+                                <h3 class="textTitleClassTitle">Introduction to Robin Gerard Penleigh Boyd</h3>
+                            </div>
+                            <div class="bigTextBoxWRAPPING">
+                                <p class="bigTextBoxText">Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed the practice of Grounds, Romberg and Boyd which became a leading architectural firm in Melbourne. The firm also practiced extensively in Canberra.</p>
+
+                                <p class="bigTextBoxText">Although the three partners were prominent as individuals, the firm maintained a strong design unity. Some buildings revealed the hand of one or other of the architects, but in general the firm developed a corporate style, combining the philosophies of the trio and representing the advanced thinking of that era. They often worked or supervised on each other’s projects. Their work was a distinctive Australian form of the International Style, then called Contemporary. (Clerehan, 1993)</p>
+                                <div class="centertext">
+                                    <blockquote>
+                                        <i>
+                                            "Boyd had a prolific output of architectural designs, books and articles. He wrote over 700 articles for journals and newspapers" <q>Robin Boyd</q>
+                                        </i>
+                                    </blockquote>
+                                </div>
+
+                                <p class="bigTextBoxText">Boyd joined the National Capital Planning Committee (NCPC) in January 1968 as one of two architectural experts, the other being Professor Gordon Stephenson from Western Australia. Boyd and Stephenson were charged with creating a statement of civic design philosophy that would form the basis of the NCDC policies relating to the Buildings (Design and Siting) Ordinance 1964. These policies would guide the aesthetic, development principles and layout of buildings in the National Capital areas of Canberra.</p>
+                                <p class="bigTextBoxText">Boyd had a prolific output of architectural designs, books and articles. He wrote over 700 articles for journals and newspapers, presented a TV series on Modernism and was the author of Victorian Modern: 111 Years of modern Architecture in the State of Victoria, Australia (1947); Australia’s Home: Its Origins, Builders and Occupiers (1952); The Australian Ugliness (1960); Kenzo Tange (1962); The Walls Around Us: The Story of Australian Architecture (1962); The Puzzle of Architecture (1965); New Directions in Japanese Architecture (1968); Living In Australia (1970); and The Great Great Australian Dream (1972 posthumously).</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--______________________________________ gal box 1 ______________________________________-->
+
+                <section class="sideBySideGallery">
+                    <!--pics
+                    2.  Boyd's hand-written draft table of the Churchill House scheme details
+                    6.  Details of glazing construction drawings
+                    -->
+                    <!--________ title ________-->
+
+
+                    <div class="galleryWrap">
+
+                        <!--________ split left ________-->
+                        <div class="galSplitLeft-sideBySide">
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryImgSideBySide" src="img/page2/box1/churchill-house-2.jpg" alt="Boyd's hand-written draft table of the Churchill House scheme details">
+                                </div>
+                                <div class="galleryText">
+                                    Boyd's hand-written draft table of the Churchill House scheme details
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--________ split right ________-->
+                        <div class="galSplitRight-sideBySide">
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryImgSideBySide" src="img/page2/box1/churchill-house-6.jpg" alt="Details of glazing construction drawings">
+                                </div>
+                                <div class="galleryText">
+                                    Details of glazing construction drawings
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </section>
+
+                <!--______________________________________ text box 1 ______________________________________-->
+
+                <section class="center80PercentText">
+                    <div class="center80Percent">
+                        <div class="bigTextBoxCentered">
+                            <div class="boxTitle">
+                                <h3 class="textTitleClassTitle">Boyd's Oeuvre</h3>
+                            </div>
+                            <div class="bigTextBoxWRAPPING">
+                                <p class="bigTextBoxText">His architectural work is mostly known through his residential designs. He was known for his ability to design houses that would meet client needs, solve site problems and still retain architectural integrity. The designs were heavily influenced by the functional and international styles of architecture and became known as the Melbourne Regional style. It was light, simple and elegant and unmistakably modern. (Architecture Today 1972; Saunders 1972; and Serle 1995)</p>
+                                <p class="bigTextBoxText">Boyd’s residential designs that are registered on the ACT Heritage Register include:</p>
+                                <ul>
+                                    <li> Manning Clark’s House, 11 Tasmania Circle, Forrest (1952);</li>
+                                    <li> Fenner House, 8 Monaro Crescent, Red Hill (1953); and</li>
+                                    <li> Eltringham House, 12 Marawa Place, Aranda (1968-69).</li>
+                                </ul>
+
+                                <p class="bigTextBoxText">He is also credited with the following designs in the ACT:</p>
+                                <ul>
+                                    <li> Dr Hilary Roche House, Bedford Street, Deakin (1954);</li>
+                                    <li> Zoology building ANU (1961);</li>
+                                    <li> three houses in Vasey Crescent, Campbell (1961) (Grounds & Boyd);</li>
+                                    <li> W G Verge House, 204 Monaro Crescent, Red Hill (1963);</li>
+                                    <li> 204 Monaro Crescent, Red Hill (1964); and</li>
+                                    <li> Zoology Building ANU (1963-8).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--______________________________________ gal box 2 ______________________________________-->
+
+                <section class="sideBySideGallery">
+                    <!--pics
+                    24. Churchill House interior detail
+                    25. Churchill House interior detail
+                    -->
+                    <!--________ title ________-->
+
+
+                    <div class="galleryWrap">
+
+                        <!--________ split left ________-->
+                        <div class="galSplitLeft-sideBySide">
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryImgSideBySide" src="img/page2/box2/churchill-house-24.jpg" alt="Churchill House interior detail">
+                                </div>
+                                <div class="galleryText">
+                                    Churchill House interior detail
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--________ split right ________-->
+                        <div class="galSplitRight-sideBySide">
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryImgSideBySide" src="img/page2/box2/churchill-house-25.jpg" alt="Churchill House interior detail">
+                                </div>
+                                <div class="galleryText">
+                                    Churchill House interior detail
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </section>
+
+                <!--______________________________________ text box 2 ______________________________________-->
+
+                <section class="center80PercentText">
+                    <div class="center80Percent">
+                        <div class="bigTextBoxCentered">
+                            <div class="boxTitle">
+                                <h3 class="textTitleClassTitle">Boyd's Controversy and Awards</h3>
+                            </div>
+                            <div class="bigTextBoxWRAPPING">
+                                <p class="bigTextBoxText">In the 1960s he started to move away from the glass box functionalism of the International and Melbourne Regional styles arguing that it had a limited range of expression and instead tried, somewhat unsuccessfully, to land large prestigious commissions for advanced high-rise buildings. He submitted many designs, but few were successful. Those that he did win tended to be of a more moderate size, such as the Menzies College at La Trobe University or Churchill House. Taylor (1990:80) notes that Boyd’s interest in Brutalism was heavily influenced by his travels in Japan and he became known as the chief advocate in Australia for the “vigorous, concrete buildings of post-war Japan”, but goes on to note that his own attempts at major Brutalist designs show “...a somewhat crude, unexpressive, Brutalist aesthetic. </p>
+                                <div class="centertext">
+                                    <blockquote>
+                                        <i>
+                                            "Boyd had a prolific output of architectural designs, books and articles. He wrote over 700 articles for journals and newspapers" <q>Robin Boyd</q>
+                                        </i>
+                                    </blockquote>
+                                </div>
+                                <p class="bigTextBoxText">Boyd’s later buildings are disappointing...”. Commentary in architectural journals and works on Boyd focus on his residential designs and larger Melbourne-based buildings. References to Churchill House mention that he was working on it at the time of his death, and the most favourable account comes from Serle’s 1995 biography that noted that it was the “only new work of any consequence” (p.308) and that tenders for “Boyd’s innovative design for Churchill House were surprisingly low” (p.309). Raisebeck (2017) noted that, “...Boyd’s works and writings from 1960- 1967 depict a relatively consistent commitment to a universal modernism tempered through a regional lense...exemplified in the earlier Zoology building”, while his later work demonstrates a stark change of focus and a less coherent whole with the different façades of Churchill House showing a different compositional treatment as a result of “...Boyd’s experimental bent and abandonment of an integrated and universal modernism.”</p>
+                                <p class="bigTextBoxText">Boyd received the Royal Australian Institute of Architects Gold Medal in 1969 and was awarded a Commander of the Most Excellent Order of the British Empire (CBE) in 1971 for his services to architecture and government. In the same year he died suddenly from a stroke while recovering from an anaesthetic as part of treatment for an infection. As a result, his work on the Former Churchill House had to be completed by another architect, Bill Williams, who had been employed by Boyd to work on the project under the supervision of a more experienced architect, Neil Clerehan (who later designed the second storey of the north wing to replace the glass display pavilion). (Serle 1995)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+        </main>
+        <!--______________________________________ footer ______________________________________-->
+
+        <footer>
+            <!--________ upper nav ________-->
+            <div class="space"></div>
+            <div class="footerUpper">
+                <div class="backToTop"><a HREF="#top" class="linkTop">Back to Top</a></div>
+            </div>
+            <!--________ footer lower + copyright ________-->
+            <div class="footerLower">
+                <em><b>copyright &copy; 2019. This website was produced by a student in the Faculty of Arts & Design, University of Canberra, 2019.</b></em>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

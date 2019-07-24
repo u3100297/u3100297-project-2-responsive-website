@@ -1,0 +1,875 @@
+/* ------------------------------------------ SITE STYLE SHEET ------------------------------------------ */
+/* -------------------------- SITE STYLE SHEET -------------------------- */
+/* ---------------- subheading ---------------- */
+/* 
+
+Current:
+body #FFFFFF
+textboxes #F8F8F9
+
+gray #9A9A9A
+
+
+dark gray text 35333B
+*/
+html {}
+
+#body {
+    background-color: #F8F8F9;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container {}
+
+.content {
+    max-width: 1400px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #F8F8F9;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ---------------- text styling ---------------- */
+
+/*  paragraph  */
+p {
+    font-family: "Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif";
+    line-height: 1.6;
+}
+
+/*  list fonts  */
+ul li {
+    font-family: "Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif";
+    line-height: 1.6;
+}
+
+/*  title fonts  */
+.headerUpper h1 {
+    letter-spacing: 6px;
+    font-family: "Marker Felt, fantasy";
+    font-size: 2.8em;
+
+}
+
+/*  textbox title fonts  */
+.textTitleClassTitle {
+    font-family: Marker Felt, fantasy;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    text-align: center;
+
+}
+
+/*  hamburgler menu fonts  */
+.hamburglerStyle {
+    font-family: Marker Felt, fantasy;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    color: white;
+}
+
+/* sets colout of the list bullet points and link*/
+.midNav,
+.midNav a {
+    color: #FFFFFF;
+}
+
+/*  gallery item text under  */
+.galleryText {
+    font-family: "Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif";
+    font-size: 0.8em;
+    padding: 10px;
+    text-align: center;
+}
+
+/*  blockquote styling  */
+.centertext {
+    text-align: center;
+}
+
+/*  for large quotation marks  */
+.blockquote {}
+
+/*  quote tag referencing the person who spoke the quote */
+q {
+    font-size: 0.5em;
+}
+
+/*  styles of blockquote text */
+i {
+    letter-spacing: 1.5px;
+    line-height: 2;
+    font-size: 1.4em;
+}
+
+
+/* -------------------------- header -------------------------- */
+header {
+    background-color: #e8e8e8;
+    clear: both;
+    max-width: 1400px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 600px;
+}
+
+/* ---------------- header upper ---------------- */
+.headerUpper {
+    width: 100%;
+    height: 50%;
+    /* 300px*/
+}
+
+/* header upper wrap for title and position of element */
+.headerTitleItem {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    top: 100%;
+    transform: translateY(-100%);
+
+}
+
+/* ---------------- header nav desktop ---------------- */
+
+/* header lower is actually the middle box which contains the desktop nav */
+.headerLower {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* display and fonts */
+.nav form {
+    display: inline-block;
+    font-family: Marker Felt, fantasy;
+    text-decoration: none;
+    text-decoration-color: #F8F8F9;
+}
+
+/* button style */
+.button {
+    border: none;
+    border-radius: 1vw;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    cursor: pointer;
+}
+
+/* colours */
+.buttonInner {
+    background-color: #888;
+    color: #F8F8F9;
+    letter-spacing: 3px;
+}
+
+/* link */
+.buttonInner:link {
+    color: #F8F8F9;
+
+}
+
+.buttonInner:visited {
+    color: #F8F8F9;
+
+}
+
+.buttonInner:hover {
+    background-color: black;
+    color: red;
+    font-size: 105%;
+
+}
+
+/* should stay highlighted when on the page */
+.buttonInner:active {
+    color: orange;
+
+}
+
+/* ---------------- header nav tablet + mobile ---------------- */
+/* centers hamburger, sets dimentions of container*/
+.hamburgler {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+/* sets properties of hamburger nav */
+.midNav {
+    height: auto;
+    width: 0;
+    top: 0;
+    position: fixed;
+    background-color: #888;
+    overflow-x: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-top: 60px;
+}
+
+/* sets dimentions of text in ham nav */
+.midNav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s;
+}
+
+
+
+/* hover over the links (should match desktop menu colour theme, could even use the same buttons in the hamburgler but dont have time) */
+.midNav a:hover {
+    color: #AAAAAA;
+}
+
+/* position of close button */
+.midNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+    font-size: 3rem;
+    margin-left: 10vw;
+}
+
+/*Set the appearance of the sidebar menu trigger/button*/
+#enterHamburgler {
+    height: 75px;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+
+/* -------------------------- header actually lower -------------------------- */
+/* logo stuff */
+.headerActuallyLower {
+    height: 200px;
+    position: relative;
+}
+
+.logoWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 140px;
+    width: auto;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+}
+
+/* -------------------------- FOOTER SECTION -------------------------- */
+
+/* styles and padding */
+footer {
+    background-color: #F8F8F9;
+    background-color: #888;
+
+    clear: both;
+    max-width: 1400px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* -------------FOOTER UPPER NAV------------- */
+
+.footerUpper {
+    padding: 10px;
+    text-align: center;
+}
+
+/* top button */
+.backToTop {
+    color: white;
+    font-family: Marker Felt, fantasy;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.linkTop {
+    color: white;
+    text-decoration: none;
+}
+
+/* -------------FOOTER LOWER------------- */
+/* copyright stuff */
+.footerLower {
+    background-color: #949494;
+    color: white;
+    text-align: center;
+
+}
+
+/* ------------------------------------------ index page ------------------------------------------ */
+/* -------------------------- heading -------------------------- */
+/* ---------------- subheading ---------------- */
+
+/* top gallery on index page */
+.bigGallery {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F9;
+}
+
+
+.bigGalleryItem {
+    padding: 10px;
+    margin-bottom: 40px;
+    height: 600px;
+}
+
+/* fit img to galleryitem*/
+.bigGalleryItem img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------- hover------------ */
+
+.bigGalleryItem img:hover {
+    border: 5px solid #447ef9;
+}
+
+/* positioning */
+.galleryTitleWrap {
+    text-align: center;
+    clear: both;
+}
+
+
+
+/* -------------------------- SECTION middleText -------------------------- */
+/* setting the left and right side of the page*/
+.middleText {
+    clear: both;
+    height: auto;
+    background-color: #F8F8F9;
+    padding: 10px;
+
+}
+
+.midTextSplitLeft .midTextSplitRight {
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* was going to use to do more cool stuff */
+.bigTextBox {}
+
+/* title styles */
+.boxTitle {}
+
+
+.bigTextBoxWRAPPING {}
+
+.bigTextBoxText {}
+
+
+/* -------------------------- SECTION smolGALLERY -------------------------- */
+
+/* 2 x 2 gallery */
+.smolGallery {
+    /* gallery wrapping box */
+    width: 100%;
+    clear: both;
+    background-color: #F8F8F9;
+}
+
+/* split page */
+.galSplitLeft {
+    float: left;
+    width: 50%;
+}
+
+.galSplitRight {
+    float: right;
+    width: 50%;
+}
+
+/* the actual box */
+.responsiveGalleryItem {
+    padding: 15px;
+}
+
+.galleryItem:hover {
+    border: 5px solid #447ef9;
+
+}
+
+/* fit img to galleryitem*/
+.galleryItemSmolImg {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ------------------------------------------ PAGE 0 ------------------------------------------ */
+
+/* -------------------------- SECTION picTextSideBySide NEW NEW NEW -------------------------- */
+/* setting rows out, img on left, text on right */
+.picLeftSideBySide {
+    background-color: #F8F8F9;
+    clear: both;
+    height: auto;
+    display: inline-flex;
+}
+
+.wrappingRow {}
+
+.split30Left {
+    width: 28%;
+    float: left;
+}
+
+.split70Right {
+    width: 68%;
+    float: right;
+}
+
+/* picture item and size */
+.smolVerticalGalleryItem {
+    display: inline-block;
+    background-color: #F8F8F9;
+
+}
+
+/* bottom pic cause its a big boy */
+bigVerticalGalleryItem {
+    height: 400px;
+    display: inline-block;
+    background-color: #F8F8F9;
+}
+
+.bigVerticalGalleryItem .smolVertImg {
+    width: 100%;
+    height: 100%;
+}
+
+/* these two should be combined but it didnt work so i kept them seperate */
+.smolVerticalGalleryItem .smolVertImg {
+    width: 100%;
+    height: 100%;
+}
+
+/* borders and stuff */
+.smolVerticalGalleryItem:hover {
+    border: 5px solid #447ef9;
+}
+
+.bigTextBoxText:hover {
+    border: 5px solid white;
+}
+
+.bigVerticalGalleryItem:hover {
+    border: 5px solid white;
+}
+
+.centeredBoxRight:hover {
+    border: 5px solid white;
+}
+
+/* text stuff and positioning */
+.centeredBoxRight {
+    background-color: #F8F8F9;
+    /* border: 4px solid black; */
+    padding: 10px;
+}
+
+
+.rightBoxTitle {
+    /*title text */
+    text-align: center;
+}
+
+
+/* ------------------------------------------ PAGE 1 stylesheet ------------------------------------------ */
+/* -------------------------- SECTION 4x1 gallery -------------------------- */
+
+/* 4x1 gallery up top and bot */
+.topGallery {
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+/* responsive padding and positioning */
+.responsive {
+    /* responsive items */
+    padding: 0 6px;
+    float: left;
+    width: 23.99%;
+}
+
+/* each pic in the gallery */
+.galleryRowImg {
+    width: 100%;
+    height: 300px;
+}
+
+.responsiveGalleryItem:hover {
+    border: 5px solid #447ef9;
+}
+
+/* all the text formatting was from pg 0 */
+
+/* ------------------------------------------ PAGE 2 ------------------------------------------ */
+/* -------------------------- SECTION picTextSideBySide -------------------------- */
+
+/* pics, then text under */
+.sideBySideGallery {
+    /* gallery wrapping box */
+    width: 100%;
+    clear: both;
+    background-color: #F8F8F9;
+    height: 100%;
+}
+
+.galSplitLeft-sideBySide {
+    float: left;
+    width: 50%;
+}
+
+.galSplitRight-sideBySide {
+    float: right;
+    width: 50%;
+}
+
+/* the actual box */
+.galleryImgSideBySide {
+    /* fit img to galleryitem*/
+    width: 100%;
+    padding-top: 20px;
+    height: 500px;
+}
+
+/* text formatting covering 80% of the page and aligning middle */
+.center80Percent {
+    width: 80%;
+    padding-left: 10%;
+    clear: both;
+
+}
+
+.boxTitle {
+    text-align: center;
+}
+
+/* some padding to look nice and keep colours */
+.galleryWrapTitleSideBySide {
+    padding: 5px;
+}
+
+/* do some fancy zoom stuff with images */
+.galleryItemImage {}
+
+
+.galleryTitle {}
+
+/* ------------------------------------------ media screen ------------------------------------------ */
+
+
+/* -------------------------- mobile -------------------------- */
+@media only screen and (max-width: 425px) {
+    body {
+        /*  background-color: #F09A9D;
+        Red */
+    }
+
+    /* make more space for mobile */
+    .content {
+        padding: 0px;
+    }
+
+    .headerUpper h1 {
+        font-size: 1.4em;
+
+    }
+
+    /* smaller fonts for quotes */
+    i {
+        letter-spacing: 0.7px;
+        line-height: 1;
+        font-size: 0.9em;
+    }
+
+    /* remove desktop nav */
+    .nav {
+        display: none;
+    }
+
+    /* padding for burger so it looks tasty */
+    .hamburgler {
+        padding-top: 50px;
+    }
+
+    /* remove logo and other elements*/
+    .headerActuallyLower {
+        display: none;
+    }
+
+    .logoWrapper {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /*  most title fonts smaller */
+    .textTitleClassTitle {
+        font-family: Marker Felt, fantasy;
+        letter-spacing: 1.6px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    /* ------------- responsive index page ------------- */
+
+    .galSplitLeft .galSplitLeft-sideBySide .galSplitRight .galSplitRight-sideBySide {
+        float: none;
+        width: 100%;
+    }
+
+    .bigGalleryItem {
+        height: 250px;
+    }
+
+    /* ------------- responsive page 0 ------------- */
+
+    /*  grouping display stuff */
+    .split30Left {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    .split70Right {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    /* ------------- responsive page 1 ------------- */
+
+    /*  needed some silly image width to keep spacing */
+    .responsive {
+        width: 96%;
+    }
+
+    /* ------------- page 2 ------------- */
+
+    /*  smaller image and padding */
+    .galleryImgSideBySide {
+        padding-top: 5px;
+        height: 250px;
+    }
+
+    /* the actual box, smaller padding */
+    .responsiveGalleryItem {
+        padding: 5px;
+
+    }
+
+    /*  new height for smol screen */
+    .sideBySideGallery {
+        height: 60%;
+    }
+
+
+}
+
+/* -------------------------- tablet -------------------------- */
+
+@media only screen and (min-width: 426px) and (max-width: 960px) {
+    body {
+        /* background-color: #F5CF8E;
+         Yellow */
+    }
+
+    /* removing padding for tablet */
+    .content {
+        padding: 0px;
+    }
+
+
+    .nav {
+        display: none;
+    }
+
+    .logoWrapper {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /* ------------- responsive index page ------------- */
+
+    /* two main images up top */
+    .galSectionBox {
+        width: 49%;
+        display: inline;
+        float: left;
+        padding-bottom: 10px;
+
+    }
+
+    /* changing width of all split page elements  */
+    .galSplitLeft .pageSplitLeft .galSplitRight .pageSplitRight {
+        float: none;
+        width: 100%;
+    }
+
+    /* bottom pic in big gallery is different, changing properies to put the third pic below in the middle */
+    .responsiveBot {
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        padding-bottom: 20px;
+        float: right;
+        width: 100%;
+
+    }
+
+    .bigGalleryItem {
+        height: 400px;
+    }
+
+    /* ------------- responsive page 0 ------------- */
+
+
+
+    /* ------------- responsive page 1 ------------- */
+    /* modifing spacing */
+    .responsive {
+        width: 45.999%;
+        margin: 6px 0;
+
+    }
+
+    /* ------------- page 2 ------------- */
+    .galleryImgSideBySide {
+        /* fit img to galleryitem*/
+        padding-top: 5px;
+        height: 400px;
+    }
+
+    .galSplitLeft-sideBySide {
+        float: none;
+        width: 100%;
+    }
+
+    .galSplitRight-sideBySide {
+        float: none;
+        width: 100%;
+    }
+
+    /* modifing padding */
+    .responsiveGalleryItem {
+        padding: 5px;
+
+    }
+
+}
+
+/* -------------------------- desktop -------------------------- */
+
+@media only screen and (min-width: 961px) {
+    body {
+        /* background-color: #B2D6FF;
+        Blue */
+    }
+
+    /* adding padding */
+    .content {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    /* removing tasty burger */
+    .hamburgler {
+        display: none;
+    }
+
+    /* ------------- responsive index page ------------- */
+
+    /* flexing galleries */
+    .bigGallery {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .responsiveBot {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .galSectionBox {
+        width: 100%;
+    }
+
+
+    .middleText {
+        display: flex;
+    }
+
+    /* ffloating left and right */
+    .midTextSplitLeft {
+        float: left;
+        width: 49%;
+        padding: 10px;
+    }
+
+    .midTextSplitRight {
+        float: right;
+        width: 49%;
+        padding: 10px;
+
+    }
+
+    /* ------------- page 1 ------------- */
+
+    .responsive {
+        width: 23%;
+
+    }
+
+}

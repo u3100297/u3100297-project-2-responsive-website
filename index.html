@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Churchill House u3100297</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/resetCSS.css" />
+    <link rel="stylesheet" type="text/css" href="css/StylesStuff.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" /> -->
+
+
+    <link rel="stylesheet" href="page0.html" media="screen" type="text/css">
+    <link rel="stylesheet" href="page1.html" media="screen" type="text/css">
+    <link rel="stylesheet" href="page2.html" media="screen" type="text/css">
+    <link rel="stylesheet" href="page3.html" media="screen" type="text/css">
+    <link rel="stylesheet" href="page4.html" media="screen" type="text/css">
+
+
+</head>
+<!--________ headerLower ________-->
+<!--______________________________________ page body ______________________________________-->
+
+<body>
+    <div class="container">
+        <!--______________________________________ header content ______________________________________-->
+
+        <header>
+            <div class="headerUpper">
+                <!--________ headerUpper ________-->
+                <div class="headerTitleItem">
+                    <h1><b>Churchill House</b></h1>
+                </div>
+            </div>
+            <!--________ headerLower ________-->
+            <div class="headerLower">
+                <!--________ desktop nav ________-->
+
+                <nav class="nav">
+                    <!-- <div class="logoWrapper">
+                            <a href="https://www.duckduckgo.com" target="_blank">
+                                <img src="img/logo/boyd-logo-small.png" class="logo" alt="trollin">
+                            </a>
+                        </div> -->
+                    <!--	  
+                        <Li><button class="button buttonInner"><a href="index.html">Home</a></button></Li>
+                        <Li><button class="button buttonInner"><a href="page0.html">Description</a></button></Li>
+                        <Li><button class="button buttonInner"><a href="page1.html">History</a></button></Li>
+                        <Li> <button class="button buttonInner"><a href="page2.html">Robin Boyd</a></button></Li>
+                           
+                        <Li><a href="index.html">Home</a></Li>
+                        <Li><a href="page0.html">Description</a></Li>
+                        <Li><a href="page1.html">History</a></Li>
+                        <Li><a href="page2.html">Robin Boyd</a></Li>
+                        -->
+                    <form>
+                        <button formaction="index.html" class="button buttonInner">
+                            Home
+                        </button>
+                    </form>
+                    <form>
+                        <button formaction="page0.html" class="button buttonInner">
+                            Description
+                        </button>
+                    </form>
+                    <form>
+                        <button formaction="page1.html" class="button buttonInner">
+                            History
+                        </button>
+                    </form>
+                    <form>
+                        <button formaction="page2.html" class="button buttonInner">
+                            Robin Boyd
+                        </button>
+                    </form>
+                </nav>
+
+                <!--________ tablet / mobile nav ________-->
+
+                <div class="hamburgler">
+                    <section class="hamburglerImg">
+                        <!-- enter hamburgler opens and closes the menu-->
+                        <button id="enterHamburgler" class onclick="openNav()">&#9776;</button>
+                        <h3 class="textTitleClassTitle">Menu</h3>
+                    </section>
+                    <script>
+                        // open 
+                        function openNav() {
+                            document.getElementById("hamNav").style.width = "20rem";
+                        }
+                        // close -- a little dodgy probably could change the animation type etc
+                        function closeNav() {
+                            document.getElementById("hamNav").style.width = "0";
+                        }
+
+                    </script>
+                    <div id="hamNav" class="midNav">
+                        <!-- ham menu, id is for JS, class is for css-->
+                        <ul>
+                            <!-- close button-->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <!-- menu links -->
+                            <li><a class="hamburglerStyle" href="index.html">Home</a></li>
+                            <li><a class="hamburglerStyle" href="page0.html">Description</a></li>
+                            <li><a class="hamburglerStyle" href="page1.html">History</a></li>
+                            <li><a class="hamburglerStyle" href="page2.html">Robin Boyd</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="headerActuallyLower">
+                <!--________ logo img ________-->
+                <div class="logoWrapper">
+                    <img src="img/logo/boyd-logo.png" class="logo" alt="robin boyd logo">
+                </div>
+            </div>
+        </header>
+
+        <!--______________________________________ main ______________________________________-->
+
+        <main>
+            <div class="content">
+                <!--______________________________________ big gallery section ______________________________________-->
+
+                <section class="bigGallery">
+                    <!-- <div class="galleryTitleWrap">
+                        <h3 class="galleryTitle">photo title 1 here</h3>
+                    </div> -->
+
+                    <!--pics
+                        21. Churchill House exterior detail (photo Ben Ennis Butler)
+                        22. Churchill House exterior detail (photo Ben Ennis Butler)
+                        23. Churchill House exterior detail (photo Ben Ennis Butler)
+                        -->
+                    <!--________ topGallery ________-->
+
+                    <div class="galSectionBox">
+                        <!-- gallery -->
+                        <div class="bigGalleryItem">
+                            <!-- img? -->
+                            <img src="img/index/bigGallery/churchill-house-21.jpg" alt="Churchill House exterior detail">
+                            <div class="galleryText">
+                                Churchill House exterior detail (photo Ben Ennis Butler)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galSectionBox">
+                        <div class="bigGalleryItem">
+                            <img src="img/index/bigGallery/churchill-house-22.jpg" alt="Churchill House exterior detail">
+                            <div class="galleryText">
+                                Churchill House exterior detail (photo Ben Ennis Butler)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsiveBot">
+                        <div class="galSectionBox">
+                            <div class="bigGalleryItem">
+                                <img src="img/index/bigGallery/churchill-house-23.jpg" alt="Churchill House exterior detail">
+                                <div class="galleryText">
+                                    Churchill House exterior detail (photo Ben Ennis Butler)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </section>
+
+                <!--______________________________________ texts section ______________________________________-->
+
+                <section class="middleText">
+
+                    <!--pics
+                    17. Boyd’s original drawings of Churchill House – Central cross-section looking west (courtesy of Ann Cleary)
+                    18. Boyd’s original drawings of Churchill House – Central cross-section looking north (courtesy of Ann Cleary)
+                    19. Boyd’s original drawings of Churchill House – first floor plan (courtesy of Ann Cleary)
+                    20. Boyd’s original drawings of Churchill House – second floor plan (courtesy of Ann Cleary)
+                    -->
+                    <!--________ split left ________-->
+
+                    <div class="midTextSplitLeft">
+                        <div class="boxTitle">
+                            <h3 class="textTitleClassTitle">Introduction to Churchill House</h3>
+                        </div>
+                        <div class="bigTextBox">
+
+                            <div class="bigTextBoxWRAPPING">
+                                <p class="bigTextBoxText">Churchill House, at 216 Northbourne Avenue in Braddon, was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70, and construction was completed in 1971. It was Boyd’s last major commission, and he died prior to its completion. It is one of a small number of larger designs produced by Boyd and was Canberra’s first brutalist building.</p>
+                                <div class="centertext">
+                                    <blockquote>
+                                        <i>
+                                            "Boyd had a prolific output of architectural designs, books and articles. He wrote over 700 articles for journals and newspapers" <q>Robin Boyd</q>
+                                        </i>
+                                    </blockquote>
+                                </div>
+                                <p class="bigTextBoxText">Several components make up the complex. The main building, with east and south wings; the separate north wing or pavilion; the central pool and a rear carpark. The main building forms an L shape and with the north wing it encloses a courtyard with a large ornamental pool. The main building is three storeys high with a four storey lift tower at the southeast corner. The north wing and the carpark are two storeyed.</p>
+                                <p class="bigTextBoxText">Although it has undergone some alterations over the years, the building still displays key features of the brutalist style with its large areas of blank wall and use off-form concrete, sloping structural fins and precast concrete non-loadbearing wall panels, precast fins for sun protection, and vertical slit windows. Churchill House displays a fairly restrained form in comparison with the major Canberra buildings that followed in this style: Cameron Offices, National Gallery of Australia and High Court of Australia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <!--________ split right ________-->
+                    <div class="midTextSplitRight">
+                        <div class="boxTitle">
+                            <h3 class="textTitleClassTitle">Statement of Significance</h3>
+                        </div>
+                        <div class="bigTextBox">
+
+                            <div class="bigTextBoxWRAPPING">
+                                <p class="bigTextBoxText">Churchill House is a good example of the Late Twentieth Century Brutalist style, (1960-), displaying several key features as follows: </p>
+                                <ul>
+                                    <li>Large areas of blank wall, especially the west wall of the south wing.</li>
+                                    <li>Off-form concrete, such as the west wall of the south wing and the spandrels to the south and east wings.</li>
+                                </ul>
+
+                                <p class="bigTextBoxText">In addition, it displays a number of the other features of this style including: sloping structural fins, precast concrete non-loadbearing wall panels, precast fins for sun protection, and vertical slit windows. Churchill House is one of several Canberra examples of this style, and one of only two which display a restrained form reflecting, perhaps, a more conservative approach to the style because of the intended office use.</p>
+                                <div class="centertext">
+                                    <blockquote>
+                                        <i>
+                                            "Boyd had a prolific output of architectural designs, books and articles. He wrote over 700 articles for journals and newspapers" <q>Robin Boyd</q>
+                                        </i>
+                                    </blockquote>
+                                </div>
+                                <p class="bigTextBoxText">The architecture of this building may contribute to the education of designers in their understanding of Late Twentieth-Century Architectural Styles.Churchill House has interest for its association with the prominent architect, Robin Boyd. The building was his last major commission.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!--______________________________________ smolGALLERY section ______________________________________-->
+
+                <section class="smolGallery">
+                    <!--pics
+                    17. Boyd’s original drawings of Churchill House – Central cross-section looking west (courtesy of Ann Cleary)
+                    18. Boyd’s original drawings of Churchill House – Central cross-section looking north (courtesy of Ann Cleary)
+                    19. Boyd’s original drawings of Churchill House – first floor plan (courtesy of Ann Cleary)
+                    20. Boyd’s original drawings of Churchill House – second floor plan (courtesy of Ann Cleary)
+                    -->
+                    <!--________ title ________-->
+
+                    <div class="galleryWrapTitle">
+                        <h2 class="textTitleClassTitle">Boyd’s original drawings of Churchill House</h2>
+                    </div>
+                    <div class="galleryWrap">
+
+
+
+                        <!--________ split left ________-->
+                        <div class="galSplitLeft">
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryItemSmolImg" src="img/index/smolGallery/churchill-house-17.jpg" alt="Central cross-section looking west">
+                                </div>
+                                <div class="galleryText">
+                                    Central cross-section looking west (courtesy of Ann Cleary)
+                                </div>
+                            </div>
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryItemSmolImg" src="img/index/smolGallery/churchill-house-17.jpg" alt="Central cross-section looking north ">
+                                </div>
+                                <div class="galleryText">
+                                    Central cross-section looking north (courtesy of Ann Cleary)
+                                </div>
+                            </div>
+                        </div>
+                        <!--________ split right ________-->
+
+                        <!--________ split right ________-->
+                        <div class="galSplitRight">
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryItemSmolImg" src="img/index/smolGallery/churchill-house-17.jpg" alt="First floor plan">
+                                </div>
+                                <div class="galleryText">
+                                    First floor plan (courtesy of Ann Cleary)
+                                </div>
+                            </div>
+                            <div class="responsiveGalleryItem">
+                                <div class="galleryItemImage">
+                                    <img class="galleryItemSmolImg" src="img/index/smolGallery/churchill-house-17.jpg" alt="Second floor plan">
+                                </div>
+                                <div class="galleryText">
+                                    Second floor plan (courtesy of Ann Cleary)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </section>
+
+
+            </div>
+        </main>
+        <!--______________________________________ footer ______________________________________-->
+
+        <footer>
+            <!--________ upper nav ________-->
+            <div class="space"></div>
+            <div class="footerUpper">
+                <div class="backToTop"><a HREF="#top" class="linkTop">Back to Top</a></div>
+            </div>
+            <!--________ footer lower + copyright ________-->
+            <div class="footerLower">
+                <em><b>copyright &copy; 2019. This website was produced by a student in the Faculty of Arts & Design, University of Canberra, 2019.</b></em>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
